@@ -3,5 +3,13 @@
 <h1>Home</h1>
 <p><%= homeText %></p>
 
+<% postList.forEach(function(post){%>
+    
+    <h1><%= post.postT %></h1> 
+    <p><%= post.postM %></p> 
+
+<% }); %>
+    
+
 
 <%- include('partials/footer') %>
