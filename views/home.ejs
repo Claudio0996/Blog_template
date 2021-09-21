@@ -6,7 +6,7 @@
 <% postList.forEach(function(post){%>
     
     <h1><%= post.postT %></h1> 
-    <p><%= post.postM %></p> 
+    <p><%= post.postM.substring(0, 99) + ' ...' %>  <a href="<%= '/posts/'+post.postT %>">Read More</a></p> 
 
 <% }); %>
     
